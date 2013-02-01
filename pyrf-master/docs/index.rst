@@ -1,5 +1,5 @@
 
-ThinkRF Device API
+PyRF Documentation
 ==================
 
 Contents:
@@ -7,8 +7,13 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
+   usermanual
    reference
+   examples
+   plans
 
+
+.. include:: ../README.rst
 
 
 Indices and tables

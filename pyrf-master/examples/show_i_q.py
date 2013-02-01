@@ -1,13 +1,14 @@
 #!/usr/bin/env python
 
 import sys
-from thinkrf.devices import WSA4000
+from pyrf.devices.thinkrf import WSA4000
 
 # connect to wsa
 dut = WSA4000()
 dut.connect(sys.argv[1])
 
 # setup test conditions
+dut.reset()
 dut.request_read_perm()
 dut.ifgain(0)
 dut.freq(2450e6)
